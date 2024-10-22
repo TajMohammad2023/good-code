@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="icon">
+            <div class="part">
+                
+                <div class="horizontal">
+                    <div class="text">
+                        <p>Horizontal Length</p>
+                        <span><input type="number" min="-200" max="200" value="10" id="horizon-text" readonly >px</span>
+                    </div>
+                    <input type="range" min="-200" max="200" value="10" id="horizon-range">
+                </div>
+    
+                <div class="horizontal">
+                    <div class="text">
+                        <p>Vertical Length</p>
+                        <span><input type="number" min="-200" max="200" value="10" id="vertical-text" readonly>px</span>
+                    </div>
+                    <input type="range"  min="-200" max="200" value="10" id="vertical-range">
+                </div>
+
+            </div>
+
+            <div class="part">
+
+                <div class="horizontal">
+                    <div class="text">
+                        <p>Blur Radius</p>
+                        <span><input type="number" min="0" max="300" value="5" id="blur-text" readonly>px</span>
+                    </div>
+                    <input type="range" type="number" min="0" max="300" value="5" id="blur-range">
+                </div>
+    
+                <div class="horizontal">
+                    <div class="text">
+                        <p>Spread Radius</p>
+                        <span><input type="number" min="-200" max="200" value="0" id="spread-text" readonly>px</span>
+                    </div>
+                    <input type="range"  min="-200" max="200" value="0" id="spread-range">
+                </div>
+
+            </div>
+
+            <div class="part">
+                
+                <div class="color">
+                    <p>Shadow Color</p>
+                    <div>
+                        <input type="color" class="co" value="#000000" id="shadow-color-color">
+                        <input type="text" class="writ" value="#000000" id="shadow-color-text" >
+                    </div>
+                </div>
+    
+                <div class="color">
+                    <p>Background Color</p>
+                    <div>
+                        <input type="color" class="co" value="#ffffff" id="background-color-color">
+                        <input type="text" class="writ" value="#ffffff" id="background-color-text">
+                    </div>
+                </div>
+    
+                <div class="color">
+                    <p>Box Color</p>
+                    <div>
+                        <input type="color" class="co" value="#e7a61a" id="box-color-color">
+                        <input type="text" class="writ" value="#e7a61a" id="box-color-text">
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="part">
+
+                <div class="horizontal">
+                    <div class="text">
+                        <p>Opacity</p>
+                        <input type="number" min="0" max="100" value="0.75" id="opacity-text" readonly>
+                    </div>
+                    <input type="range" value="75" id="opacity-range">
+                </div>
+
+                <div class="side">
+                    <span id="left">Outline</span>
+                    <div class="btn">
+                        
+                        <input type="range" min="0" max="1" value="0" id="inset">
+                        
+                    </div>
+                    <span id="right">Inset</span>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="picture" id="big">
+            <div class="box" id="box">
+                <p>Box Shadow</p>
+                <div class="textbox">
+                    <span id="1">-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);</span>
+                    <span id="2">-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);</span>
+                    <span id="3">box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
