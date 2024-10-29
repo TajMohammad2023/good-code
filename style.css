@@ -23,6 +23,12 @@ body{
     align-items: center;
 }
 
+@media (max-width: 768px) {
+  .container {
+        flex-direction: column;
+  }
+}
+
 .container .icon{
     width: 30%;
     height: 100%;
